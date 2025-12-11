@@ -1,0 +1,43 @@
+
+.lg{
+    color: red;
+    background-color: blue;
+}
+
+.cc,dd{
+    color: brown;
+    background-color: blanchedalmond;
+}
+.input[text]{
+    padding: 10;
+    border-color: red;
+    fill: aqua;
+}
+.input[number]{
+    padding: 20;
+    border-color: blueviolet;
+    fill: black;
+
+}
+.input[submit]{
+    color: chartreuse;
+}
+#pp{
+    color:coral;
+    background-color: black;
+
+}
+#ff{
+    color: darkgreen;
+    background-color: dimgray;
+
+}
+#qq{
+    color: deeppink;
+    background-color: aquamarine;
+
+}
+#oo,#nn,#mm{
+color: gold;
+background-color: black;
+}
