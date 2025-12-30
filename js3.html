@@ -102,9 +102,152 @@
         }
         else{
             alert("not a leap year")
+        } -->
+    </script>
+
+#task 5
+    <script>
+        let choice = Number(prompt("1 = celsius to fahrenheit, 2 = fahrenheit to celsius"));
+        let temp = Number(prompt("enter the temperature:"));
+    
+        if (choice ==1){
+            let result = (temp *9)/5 +32;
+            alert("Fahrenheit is:"+result);
+        }
+        else if (choice ==2){
+            let result = (temp -32)*5/9;
+            alert("Celsius is:"+result);
+        }
+        else{
+            alert("Wrong choice");
+        }
+    </script> 
+
+#task 6
+    <script>
+        let str=prompt("Enter a string:");
+        let count=0;
+
+        for (let i=0;i<str.length;i++){
+            let ch = str.charAt(i).toLowerCase();
+            if (ch =='a'|| ch =='e'|| ch =='i'|| ch =='o'|| ch =='u') {
+                count++;
+
+            }
+            
+        }
+        alert("vowels count: "+count);
+    </script> 
+
+ #task 11
+    <script>
+        let n = Number(prompt("Enter a number"));
+        let count = 0;
+
+        for (let i = 1; i <= n; i++) {
+        if (i % 2 !== 0) {
+        count++;
+  }
+}
+
+        alert("Odd numbers count: " + count);
+
+    </script> 
+
+ #task 13
+    <script>
+        let base = Number(prompt("Enter base"));
+        let exp = Number(prompt("Enter exponent"));
+        let result = 1;
+
+        for (let i = 1; i <= exp; i++) {
+            result *= base;
         }
 
-    
+        alert("Result: " + result);
+
+        
+        
+
+    </script> 
+
+ #task 14
+    <script>
+        let m1 = Number(prompt("Enter mark 1"));
+        let m2 = Number(prompt("Enter mark 2"));
+        let m3 = Number(prompt("Enter mark 3"));
+
+        let total = m1 + m2 + m3;
+        let avg = total / 3;
+
+        let result = (m1 >= 35 && m2 >= 35 && m3 >= 35) ? "PASS" : "FAIL";
+
+       
+        console.log("Total:", total);
+        console.log("Average:", avg);
+        console.log("Result:", result);
+
+    </script> 
+
+#task 15
+    <script>
+        let rupees = Number(prompt("Enter amount in Rupees"));
+        let rate = 83;
+        let dollars = rupees / rate;
+
+        alert("Dollars: $" + dollars);
+
+    </script> 
+
+
+#task 16
+    <script>
+        let num=Number(prompt("enter a number"));
+        let sum =0
+        
+        for (; num > 0; num = Math.floor(num / 10)) {
+        sum += num % 10;
+        }
+
+        alert("Sum of digits: " + sum);
+
+
+    </script> 
+
+#task 18
+    <script>
+        let n = Number(prompt("How many numbers?"));
+        let sum = 0;
+
+        for (let i = 1; i <= n; i++) {
+        let num = Number(prompt("Enter number " + i));
+        sum = sum + num;
+        }
+
+        let average = sum / n;
+        alert("Average: " + average);
+</script>
+
+#task 19
+    <script>
+        let num = Number(prompt("Enter a number"));
+
+        if (num % 3 === 0 && num % 5 === 0){
+            alert("Divisible by both 3 and 5");
+        }
+        else if (num % 3 === 0){
+            alert("Divisible by 3");
+        }
+        else if (num % 5 === 0){
+            alert("Divisible by 5");
+        }
+        else{
+            alert("Not divisible by 3 or 5");
+        }
+
+
+
+
 
 
 
